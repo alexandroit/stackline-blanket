@@ -1,5 +1,5 @@
 var inBrowser = typeof window !== 'undefined' && this === window;
-var parseAndModify = (inBrowser ? window.falafel : require("falafel"));
+var parseAndModify = (inBrowser ? window.falafel : require("./vendor/falafel"));
 
 (inBrowser ? window : exports).blanket = (function(){
     var linesToAddTracking = [
@@ -118,10 +118,16 @@ var parseAndModify = (inBrowser ? window.falafel : require("falafel"));
             }else{
                 var sourceArray = _blanket._prepareSource(inFile);
                 _blanket._trackingArraySetup=[];
+                _blanket._useStrictMode=false;
+                _blanket._directivePrologueEnd=0;
                 //remove shebang
                 inFile = inFile.replace(/^\#\!.*/, "");
                 var instrumented =  parseAndModify(inFile,{locations:true,comment:true,ecmaVersion:_blanket.options("ecmaVersion")}, _blanket._addTracking(inFileName));
-                instrumented = _blanket._trackingSetup(inFileName,sourceArray)+instrumented;
+                var prologueEnd = _blanket._directivePrologueEnd;
+                var prologue = instrumented.chunks.slice(0,prologueEnd).join("");
+                var body = instrumented.chunks.slice(prologueEnd).join("");
+                instrumented = prologue + (prologueEnd ? "\n" : "") +
+                    _blanket._trackingSetup(inFileName,sourceArray) + body;
                 if (_blanket.options("sourceURL")){
                     instrumented += "\n//@ sourceURL="+inFileName.replace("http://","");
                 }
@@ -151,10 +157,6 @@ var parseAndModify = (inBrowser ? window.falafel : require("falafel"));
             var sourceString = sourceArray.join("',\n'");
             var intro = "";
             var covVar = _blanket.getCovVar();
-
-            if(_blanket._useStrictMode) {
-                intro += "'use strict';\n";
-            }
 
             intro += "if (typeof "+covVar+" === 'undefined') "+covVar+" = {};\n";
             if (branches){
@@ -239,6 +241,18 @@ var parseAndModify = (inBrowser ? window.falafel : require("falafel"));
             return function(node){
                 _blanket._blockifyIf(node);
 
+                // Acorn marks only literal statements in a directive prologue.
+                // Inserting counters before one would disable strict mode for the scope.
+                if (node.type === "ExpressionStatement" && typeof node.directive === "string") {
+                    if (node.parent.type === "Program") {
+                        _blanket._directivePrologueEnd = node.end;
+                        if (node.directive === "use strict") {
+                            _blanket._useStrictMode = true;
+                        }
+                    }
+                    return;
+                }
+
                 if (linesToAddTracking.indexOf(node.type) > -1 && node.parent.type !== "LabeledStatement") {
                     _blanket._checkDefs(node,filename);
                     if (node.type === "VariableDeclaration" &&
@@ -254,8 +268,6 @@ var parseAndModify = (inBrowser ? window.falafel : require("falafel"));
                     }
                 }else if (_blanket.options("branchTracking") && node.type === "ConditionalExpression"){
                     _blanket._trackBranch(node,filename);
-                }else if (node.type === "Literal" && node.value === "use strict" && node.parent && node.parent.type === "ExpressionStatement" && node.parent.parent && node.parent.parent.type === "Program"){
-                    _blanket._useStrictMode = true;
                 }
             };
         },

@@ -1,14 +1,14 @@
 {
-  "name": "blanket",
-  "version": "1.1.7",
+  "name": "stackline-blanket",
+  "version": "1.0.0",
   "main": [
     "./dist/qunit/blanket.js"
   ],
-  "homepage": "https://github.com/alex-seville/blanket",
+  "homepage": "https://github.com/alexandroit/stackline-blanket",
   "authors": [
     "Alex-Seville <hi@alexanderseville.com>"
   ],
-  "description": "blanket.js is a simple code coverage library for javascript",
+  "description": "Maintained Blanket.js 1.2.3 compatibility fork",
   "moduleType": [
     "amd",
     "globals",

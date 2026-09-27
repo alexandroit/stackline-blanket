@@ -1,4 +1,4 @@
-var extend = require("xtend"),
+var extend = require("./vendor/xtend"),
     path = require('path'),
     join = path.join;
 
@@ -210,13 +210,13 @@ if ((process.env && process.env.BLANKET_COV===1) ||
 
     for (var i = 0; i < args.length; i++) {
         if (['-r', '--require'].indexOf(args[i]) >= 0 &&
-            args[i + 1] === 'blanket') {
+            ['blanket', '@stackline/blanket'].indexOf(args[i + 1]) >= 0) {
             blanketRequired = true;
         }
     }
 
     if (['node', 'iojs', 'nodejs', 'jx'].indexOf(path.basename(args[0])) > -1 &&
-        args[1].indexOf(join('node_modules','mocha','bin')) > -1 &&
+        typeof args[1] === 'string' && args[1].indexOf(join('node_modules','mocha','bin')) > -1 &&
         blanketRequired){
 
         //using mocha cli

@@ -1,0 +1,2 @@
+# Preserve Markdown hard line breaks in the archived upstream documentation.
+README.upstream.md whitespace=-blank-at-eol
