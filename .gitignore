@@ -6,3 +6,6 @@ coverage/
 .env.*
 *.pem
 *.key
+
+artifact/
+*.log
