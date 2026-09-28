@@ -1,7 +1,7 @@
 {
   "name": "@stackline/blanket",
-  "description": "Maintained Blanket.js 1.2.3 compatibility fork with directive-safe coverage instrumentation",
-  "version": "1.0.0",
+  "description": "Blanket.js 1.2.3-compatible JavaScript coverage instrumentation with directive-safe counters",
+  "version": "1.0.1",
   "homepage": "https://github.com/alexandroit/stackline-blanket#readme",
   "author": {
     "name": "Alex-Seville",
@@ -33,7 +33,14 @@
     "prepack": "npm run check"
   },
   "keywords": [
-    "coverage"
+    "stackline",
+    "coverage",
+    "blanket",
+    "instrumentation",
+    "javascript",
+    "qunit",
+    "mocha",
+    "jasmine"
   ],
   "publishConfig": {
     "access": "public"
@@ -44,6 +51,7 @@
     "LICENSE",
     "THIRD_PARTY_NOTICES.md",
     "UPSTREAM.md",
-    "README.upstream.md"
+    "README.upstream.md",
+    "CHANGELOG.md"
   ]
 }

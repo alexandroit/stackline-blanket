@@ -1,4 +1,4 @@
-/*! @stackline/blanket - v1.0.0; based on Blanket.js 1.2.3 (MIT). See THIRD_PARTY_NOTICES.md. */
+/*! @stackline/blanket - v1.0.1; based on Blanket.js 1.2.3 (MIT). See THIRD_PARTY_NOTICES.md. */
 (function(define,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
