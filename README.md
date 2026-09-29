@@ -4,13 +4,13 @@
 
 [![npm version](https://img.shields.io/npm/v/@stackline/blanket.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/blanket)
 [![license](https://img.shields.io/npm/l/@stackline/blanket.svg?style=flat-square)](https://github.com/alexandroit/stackline-blanket)
-[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-blanket-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-blanket)
+[![GitHub repository](https://img.shields.io/badge/GitHub-repository-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-blanket)
 [![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/blanket/)
 [![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
 
 **[Documentation](https://alexandro.net/docs/vanilla/blanket/)** | **[npm](https://www.npmjs.com/package/@stackline/blanket)** | **[Issues](https://github.com/alexandroit/stackline-blanket/issues)** | **[Repository](https://github.com/alexandroit/stackline-blanket)**
 
-**Current package version:** `1.0.1`
+**Current package version:** `1.0.2`
 
 ---
 
@@ -26,7 +26,7 @@ The implementation retains Blanket's instrumentation and coverage format. Its sm
 
 | Item | Value |
 | --- | --- |
-| Package | `@stackline/blanket@1.0.1` |
+| Package | `@stackline/blanket@1.0.2` |
 | Supported Node.js | `>=20` |
 | Module entry | `src/index.js` (CommonJS) |
 | Runtime dependencies | 1 direct dependency |
