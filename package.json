@@ -2,7 +2,7 @@
   "name": "@stackline/blanket",
   "description": "Blanket.js 1.2.3-compatible JavaScript coverage instrumentation with directive-safe counters",
   "version": "1.0.1",
-  "homepage": "https://github.com/alexandroit/stackline-blanket#readme",
+  "homepage": "https://alexandro.net/docs/vanilla/blanket/",
   "author": {
     "name": "Alex-Seville",
     "email": "hi@alexanderseville.com",
@@ -34,13 +34,10 @@
   },
   "keywords": [
     "stackline",
-    "coverage",
+    "npm-package",
     "blanket",
-    "instrumentation",
-    "javascript",
-    "qunit",
-    "mocha",
-    "jasmine"
+    "nodejs",
+    "coverage"
   ],
   "publishConfig": {
     "access": "public"

@@ -1,17 +1,18 @@
 # @stackline/blanket
 
-> Blanket.js 1.2.3-compatible JavaScript coverage instrumentation with directive-safe counters.
+> Maintained Blanket.js 1.2.3 compatibility fork with directive-safe coverage instrumentation.
 
 [![npm version](https://img.shields.io/npm/v/@stackline/blanket.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/blanket)
-[![license](https://img.shields.io/npm/l/@stackline/blanket.svg?style=flat-square)](https://github.com/alexandroit/stackline-blanket/blob/main/LICENSE)
-[![GitHub repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-blanket)
+[![license](https://img.shields.io/npm/l/@stackline/blanket.svg?style=flat-square)](https://github.com/alexandroit/stackline-blanket)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-blanket-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-blanket)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/blanket/)
+[![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
 
-**[Documentation](https://github.com/alexandroit/stackline-blanket#readme)** |
-**[npm](https://www.npmjs.com/package/@stackline/blanket)** |
-**[Issues](https://github.com/alexandroit/stackline-blanket/issues)** |
-**[Repository](https://github.com/alexandroit/stackline-blanket)**
+**[Documentation](https://alexandro.net/docs/vanilla/blanket/)** | **[npm](https://www.npmjs.com/package/@stackline/blanket)** | **[Issues](https://github.com/alexandroit/stackline-blanket/issues)** | **[Repository](https://github.com/alexandroit/stackline-blanket)**
 
-**Package version:** `1.0.1`
+**Current package version:** `1.0.1`
+
+---
 
 ## Why this package?
 
@@ -81,17 +82,27 @@ Tests cover strict-mode behavior, directive order, counters, callbacks, branch d
 3. Use the [GitHub publish workflow](https://github.com/alexandroit/stackline-blanket/actions/workflows/publish.yml) with its `Prod` environment to publish the exact CI tarball.
 4. Verify public npm bytes, package identity, provenance, and the immutable GitHub release evidence.
 
-## Community and Support
-
-Report reproducible package issues in the [issue tracker](https://github.com/alexandroit/stackline-blanket/issues).
-
-- [Stackline / Alexandro.Net](https://alexandro.net/)
-- [GitHub](https://github.com/alexandroit)
-- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
-- [Reddit community: r/Stackline](https://www.reddit.com/r/Stackline/)
-
 ## License
 
 [MIT](https://github.com/alexandroit/stackline-blanket/blob/main/LICENSE). Original copyright notices and upstream attribution are retained.
 
 See [UPSTREAM.md](https://github.com/alexandroit/stackline-blanket/blob/main/UPSTREAM.md) and [THIRD_PARTY_NOTICES.md](https://github.com/alexandroit/stackline-blanket/blob/main/THIRD_PARTY_NOTICES.md) for the source basis and bundled helper attribution.
+
+## Credits and original authors
+
+- Original project: [blanket](https://github.com/alex-seville/blanket).
+- Alex-Seville.
+- Copyright (c) 2013 Alex Seville.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.
