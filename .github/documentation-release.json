@@ -1,0 +1,23 @@
+{
+  "repository": "alexandroit/stackline-blanket",
+  "packages": [
+    {
+      "name": "@stackline/blanket",
+      "path": "README.md",
+      "version": "1.0.1",
+      "baselineVersion": "1.0.0",
+      "keywords": [
+        "stackline",
+        "npm-package",
+        "blanket",
+        "nodejs",
+        "coverage"
+      ],
+      "homepage": "https://alexandro.net/docs/vanilla/blanket/",
+      "baselineTarball": "https://registry.npmjs.org/@stackline/blanket/-/blanket-1.0.0.tgz",
+      "baselineIntegrity": "sha512-WNqtyPrIxS9KT1JRg2Ngrv0D6vl2bHnIJEnF/MixPNac/krres/FPRt6jfJYzTv9ZCu20YmNxHqF1uzrJdi9/Q==",
+      "expectedSha512": "0dcd0e83df188ce355b0eced547c6fe02bc6fc3f9c2b604379558ed343bb8c44cd9cf57cd02ec918188411a45d267ebe03e15fe94622859b5feb88119e554098",
+      "tag": "docs-stackline-blanket-v1.0.1"
+    }
+  ]
+}
