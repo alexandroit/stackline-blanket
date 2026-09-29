@@ -10,7 +10,7 @@
 
 **[Documentation](https://alexandro.net/docs/vanilla/blanket/)** | **[npm](https://www.npmjs.com/package/@stackline/blanket)** | **[Issues](https://github.com/alexandroit/stackline-blanket/issues)** | **[Repository](https://github.com/alexandroit/stackline-blanket)**
 
-**Current package version:** `1.0.2`
+**Current package version:** `1.0.3`
 
 ---
 
@@ -26,7 +26,7 @@ The implementation retains Blanket's instrumentation and coverage format. Its sm
 
 | Item | Value |
 | --- | --- |
-| Package | `@stackline/blanket@1.0.2` |
+| Package | `@stackline/blanket@1.0.3` |
 | Supported Node.js | `>=20` |
 | Module entry | `src/index.js` (CommonJS) |
 | Runtime dependencies | 1 direct dependency |
