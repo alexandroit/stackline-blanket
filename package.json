@@ -1,7 +1,7 @@
 {
   "name": "@stackline/blanket",
   "description": "Blanket.js 1.2.3-compatible JavaScript coverage instrumentation with directive-safe counters",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://alexandro.net/docs/vanilla/blanket/",
   "author": {
     "name": "Alex-Seville",
